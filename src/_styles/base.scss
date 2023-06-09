@@ -1,26 +1,12 @@
 body {
-  background-color: #FEFAE0;
+  background-color: var(--color-bg);
   display: grid;
   grid-template-rows: minmax(200px, auto) 1fr minmax(200px, auto);
   gap: 30px;
   min-height: 100vh;
 }
 
-header {
-  display: grid;
-  grid-template-columns: auto minmax(0, 800px) auto;
-}
 
-header picture,
-header img {
-  grid-column: 2 / span 1;
-  object-fit: cover;
-  object-position: center top;
-  width: 100%;
-  height: 100%;
-  min-height: 100px;
-  vertical-align: bottom;
-}
 
 footer img {
   width: 100%;
@@ -35,20 +21,17 @@ footer img {
 }
 
 h1 {
-  font-family: 'Merchant Ledger Rough';
   font-size: 35px;
 
 }
 
 body,
-p {
-  font-family: 'Crimson Pro', serif;
+p {font-family: var(--ff-sans);
   font-size: 1.2rem;
   line-height: 1.5;
   font-style: normal;
   font-weight: 400;
   font-feature-settings: 'sinf' on;
-  text-align: center;
 }
 
 .filler {

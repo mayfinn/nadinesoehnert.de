@@ -31,7 +31,7 @@
 
 	/* Typography
 		========================================================================== */
-  --ff-sans: 'Outfit', 'Helvetica Neue', arial, sans-serif;
+  --ff-sans: 'Outfit', sans-serif;
 	--ff-mono: "Press Start 2P", courier, monospace;
 
 	--fw-light: 300; /* Light */
@@ -58,4 +58,9 @@
 	--lh-xl: calc(var(--base) * 3.125); /* 50px */
 	--lh-xxl: calc(var(--base) * 4); /* 64px */
 
+
+	/* Misc
+		========================================================================== */
+	--max-width: 920px;
+	--grid-gap: 40px;
 }
