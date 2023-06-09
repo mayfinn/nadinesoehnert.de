@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+    "build": "deno task lume",
+    "serve": "deno task lume -s"
+  },
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v1.16.2/",
+    "postcss-minify": "npm:postcss-minify@1.1.0",
+    "postcss-extend-rule": "npm:postcss-extend-rule@4.0.0",
+    "markdown-it-shortcode-tag": "npm:markdown-it-shortcode-tag@1.1.0"
+  }
+}

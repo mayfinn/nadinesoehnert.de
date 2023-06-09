@@ -1,0 +1,61 @@
+:root {
+	/* Sizes: Renard 10 -> 10, 12.5, 16, 20, 25, 31.5, 40
+		========================================================================== */
+
+	--base: 1rem; /* Default: 16px */
+	--base-xxs: 0.625;
+	--base-xs: 0.78125;
+	--base-s: 1;
+	--base-m: 1.25;
+	--base-l: 1.5625;
+	--base-xl: 1.96875;
+	--base-xxl: 2.5;
+	--xxs: calc(var(--base) * var(--base-xxs));
+	--xs: calc(var(--base) * var(--base-xs));
+	--s: calc(var(--base) * var(--base-s));
+	--m: calc(var(--base) * var(--base-m));
+	--l: calc(var(--base) * var(--base-l));
+	--xl: calc(var(--base) * var(--base-xl));
+	--xxl: calc(var(--base) * var(--base-xxl));
+
+	/* Color Palette
+    ========================================================================== */
+
+	--color-yellow: #F9E105;
+	--color-blue: #7DC8D1;
+	--color-pink: #EE72A8;
+	--color-green: #6BC298;
+
+	--color-bg: #fff;
+	--color-fg: #222;
+
+	/* Typography
+		========================================================================== */
+  --ff-sans: 'Outfit', 'Helvetica Neue', arial, sans-serif;
+	--ff-mono: "Press Start 2P", courier, monospace;
+
+	--fw-light: 300; /* Light */
+	--fw-regular: 400; /* Regular */
+	--fw-bold: 700; /* Bold */
+	--fw-black: 900; /* Black */
+
+	--lsp-regular: normal;
+	--lsp-wide: 0.02rem; /* 0.32px */
+
+	--fs-xxs: calc(var(--base) * 0.75); /* 12px */
+	--fs-xs: calc(var(--base) * 1); /* 16px */
+	--fs-s: calc(var(--base) * 1.25); /* 20px */
+	--fs-m: calc(var(--base) * 1.75); /* 28px */
+	--fs-l: calc(var(--base) * 2); /* 32px */
+	--fs-xl: calc(var(--base) * 2.625); /* 42px */
+	--fs-xxl: calc(var(--base) * 3.375); /* 54px */
+
+	--lh-xxs: calc(var(--base) * 1); /* 16px */
+	--lh-xs: calc(var(--base) * 1.375); /* 22px */
+	--lh-s: calc(var(--base) * 1.5); /* 24px */
+	--lh-m: calc(var(--base) * 2.25); /* 36px */
+	--lh-l: calc(var(--base) * 2.5); /* 40px */
+	--lh-xl: calc(var(--base) * 3.125); /* 50px */
+	--lh-xxl: calc(var(--base) * 4); /* 64px */
+
+}
