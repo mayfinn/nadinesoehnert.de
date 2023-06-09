@@ -6,6 +6,11 @@ body {
   min-height: 100vh;
 }
 
+main {
+  max-width: var(--max-width);
+  margin: var(--xxl) auto;
+  padding: var(--grid-gap);
+}
 
 
 footer img {
@@ -20,33 +25,42 @@ footer img {
   }
 }
 
-h1 {
-  font-size: 35px;
 
-}
+body
+ {font-family: var(--ff-sans);
 
-body,
-p {font-family: var(--ff-sans);
-  font-size: 1.2rem;
+font-size: var(--fs-s);
   line-height: 1.5;
   font-style: normal;
   font-weight: 400;
   font-feature-settings: 'sinf' on;
 }
 
-.filler {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 300px;
-  color: rgba(0,0,0,0.5);
 
-  & span {
-    display: block;
-    max-width: 20ch;
-    line-height: 1;
-  }
+
+p {
+font-size: var(--fs-l);
 }
+
+h2, h3, h4 {
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-bold);
+  margin-bottom: var(--l);
+}
+h1 {
+  font-size: var(--fs-l);
+}
+
+h2 {
+  font-size: var(--fs-m);
+}
+h3 {
+  font-size: var(--fs-s);
+}
+h4 {
+  font-size: var(--fs-xs);
+}
+
 
 a {
   color: inherit;
