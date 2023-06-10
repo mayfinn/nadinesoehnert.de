@@ -7,7 +7,7 @@ body {
   min-height: 100vh;
 }
 
-main {
+main, nav, footer {
   max-width: var(--max-width);
   margin: var(--xxl) auto;
   padding: var(--m);
@@ -43,22 +43,37 @@ section {
 
 p {
 font-size: var(--fs-l);
+
+  & + p {
+    margin-top: var(--l);
+  }
 }
 
-h2, h3, h4 {
+.small p {
+  font-size: var(--fs-s);
+  line-height: var(--lh-m);
+}
+
+
+h1, h2, h3, h4 {
   font-family: var(--ff-sans);
   font-weight: var(--fw-bold);
-  margin-bottom: var(--l);
 
   &:not(:first-child) {
     margin-top: calc(var(--xxl) * 3);
   }
 }
+.small :where(h1, h2, h3, h4):not(:first-child) {
+  margin-top: var(--l);
+}
+
 h1 {
   font-size: var(--fs-l);
+  margin-bottom: var(--l);
 }
 
 h2 {
+  margin-bottom: var(--l);
   font-size: var(--fs-m);
 }
 h3 {
