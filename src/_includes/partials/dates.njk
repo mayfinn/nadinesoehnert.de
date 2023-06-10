@@ -1,0 +1,38 @@
+<h2>Kommende Termine</h2>
+<ul class="date-list">
+
+{% for event in dates|sort(false, true, 'Datum') %}
+{% if event['Datum'] | to_date | date('t') >= ('now' | date('t') - 86400) %}
+
+  <li class="date-list__item">
+    <div class="date">
+      <span class="day">{{ event['Datum'] | to_date | date('d') }}</span>
+      <span class="month">{{ event['Datum'] | to_date | date('LLL') }}</span>
+    </div>
+    <div class="name">
+      <h3>{{ event['Stadt'] | decode_utf8 }}<br>{{ event['Event-Name'] | decode_utf8 }}</h3>
+      {% if event['Subline (optional)'] %}
+      <p>{{ event['Subline (optional)'] | decode_utf8 }}</p>
+      {% endif %}
+    </div>
+    {% if event['Label (optional)'] %}
+      {% if event['Link (optional)'] %}
+      <a href="{{ event['Link (optional)'] | decode_utf8 }}" target="_blank" rel="noopener noreferrer" class="label">
+      {% else %}
+      <div class="label">
+      {% endif %}
+        {{ event['Label (optional)'] | decode_utf8 }}
+      {% if event['Link (optional)'] %}
+      </a>
+      {% else %}
+      </div>
+      {% endif %}
+    {% endif %}
+    {% if event['Link (optional)'] %}
+    {% endif %}
+  </li>
+
+{% endif %}
+{% endfor %}
+
+</ul>

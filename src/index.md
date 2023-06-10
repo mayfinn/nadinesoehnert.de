@@ -1,6 +1,6 @@
 ---
 title: Nadine Söhnert
-layout: layouts/default.njk
+layout: layouts/home.njk
 ---
 
 ## Über mich 

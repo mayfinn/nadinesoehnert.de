@@ -6,7 +6,13 @@
     {% include 'partials/banner.njk' %}
 
     <main>
-    {{ content | safe }}
+      <section>
+        {% include 'partials/dates.njk' %}
+      </section>
+
+      <section>
+       {{ content | safe }}
+      </section>
     </main>
 
     {% include 'partials/footer.njk' %}

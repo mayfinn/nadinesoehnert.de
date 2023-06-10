@@ -1,5 +1,6 @@
 body {
   background-color: var(--color-bg);
+  color: var(--color-fg);
   display: grid;
   grid-template-rows: minmax(200px, auto) 1fr minmax(200px, auto);
   gap: 30px;
@@ -9,7 +10,7 @@ body {
 main {
   max-width: var(--max-width);
   margin: var(--xxl) auto;
-  padding: var(--grid-gap);
+  padding: var(--m);
 }
 
 
@@ -36,7 +37,9 @@ font-size: var(--fs-s);
   font-feature-settings: 'sinf' on;
 }
 
-
+section {
+  margin-bottom: calc(var(--xxl) * 3);
+}
 
 p {
 font-size: var(--fs-l);

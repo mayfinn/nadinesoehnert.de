@@ -1,0 +1,47 @@
+.date-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--grid-gap);
+  margin: var(--xxl) 0;
+
+}
+
+.date-list__item {
+  display: grid;
+  gap: calc(var(--grid-gap) / 2);
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+
+  .date {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--color-fg);
+    font-family: var(--ff-mono);
+    align-items: center;
+    padding: 5px;
+  }
+
+  .name {
+    & h3 {
+      margin-bottom: 0;
+      font-size: var(--fs-s);
+      line-height: var(--lh-s);
+    }
+
+    & p {
+      font-size: var(--fs-xs);
+      line-height: var(--lh-xs);
+    }
+  }
+
+  .label {
+    padding: calc(var(--xxs) / 2) var(--xs);
+    background-color: var(--color-fg);
+    color: var(--color-bg);
+    font-weight: var(--fw-bold);
+
+    &a {
+      text-decoration: none;
+    }
+  }
+}

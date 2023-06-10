@@ -1,11 +1,13 @@
 import lume from "lume/mod.ts";
 import date from "lume/plugins/date.ts";
+import de from "npm:date-fns/locale/de/index.js";
 import imagick from "lume/plugins/imagick.ts";
 import sass from "lume/plugins/sass.ts";
 import postcss from "lume/plugins/postcss.ts";
 import postcss_minify from "postcss-minify";
 import postcss_extend_rule from "postcss-extend-rule";
 import source_maps from "lume/plugins/source_maps.ts";
+import sheets from "lume/plugins/sheets.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 
 const site = lume({
@@ -14,31 +16,13 @@ const site = lume({
 
 site.copy("static", ".");
 
-site.use(date());
+site.use(date({
+	locales: { de },
+}));
+
 site.use(imagick());
 
-site.helper("img", (path: string) => /* html */ `
-<picture>
-	<source srcset="
-		/images/${path}-500w.webp 500w,
-		/images/${path}-1000x.webp 1000w,
-		/images/${path}-2000x.webp 2000w,
-		/images/${path}-2500x.webp 2500w,
-		/images/${path}-4000x.webp 4000w" type="image/webp">
-	<source srcset="
-		/images/${path}-500w.png 500w,
-		/images/${path}-1000x.png 1000w,
-		/images/${path}-2000x.png 2000w,
-		/images/${path}-2500x.png 2500w,
-		/images/${path}-4000x.png 4000w" type="image/png">
-
-	<img srcset="/images/${path}-500w.png 500w,
-		/images/${path}-1000x.png 1000w,
-		/images/${path}-2000x.png 2000w,
-		/images/${path}-2500x.png 2500w,
-		/images/${path}-4000x.png 4000w" src="/images/${path}-1000x.png" alt="${path}">
-</picture>
-`, { type: "tag" });
+site.use(sheets());
 
 site.use(sass());
 site.use(postcss({
@@ -51,5 +35,22 @@ site.use(postcss({
 site.use(esbuild());
 
 site.use(source_maps());
+
+
+site.filter("to_date", (value) => new Date(value).toJSON());
+site.filter("decode_utf8", (value) => decodeURIComponent(escape(value)));
+
+site.filter("filter_old_dates", (array) => {
+	const now = new Date();
+
+	const new_array = array.filter((event) => {
+		const date = new Date(event["Datum"]);
+
+		return date => now;
+	});
+
+	return new_array;
+});
+
 
 export default site;
