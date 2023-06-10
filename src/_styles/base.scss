@@ -49,6 +49,10 @@ h2, h3, h4 {
   font-family: var(--ff-sans);
   font-weight: var(--fw-bold);
   margin-bottom: var(--l);
+
+  &:not(:first-child) {
+    margin-top: calc(var(--xxl) * 3);
+  }
 }
 h1 {
   font-size: var(--fs-l);

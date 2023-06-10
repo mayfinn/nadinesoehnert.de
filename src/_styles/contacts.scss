@@ -1,0 +1,29 @@
+.contacts li {
+  & a {
+    display: block;
+    margin-bottom: var(--m);
+    border: 3px solid var(--color-fg);
+    padding: var(--m);
+
+    transition: transform 0.12s ease-in-out, box-shadow 0.12s ease-in-out;
+
+    &:hover,
+    &:focus {
+      box-shadow: 5px 10px 0px var(--color-fg);
+      transform: translateX(-2.5px) translateY(-5px);
+    }
+
+  }
+
+  &:nth-child(1) a {
+    background-color: var(--color-green);
+  }
+  &:nth-child(2) a {background-color: var(--color-yellow);
+  }
+  &:nth-child(3) a {
+    background-color: var(--color-pink);
+  }
+  &:nth-child(4) a {
+    background-color: var(--color-blue);
+  }
+}
