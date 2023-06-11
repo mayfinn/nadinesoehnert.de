@@ -1,6 +1,9 @@
 ---
 title: Impressum
 layout: layouts/default.njk
+metas:
+  title: Impressum
+  description: false
 ---
 
 # Impressum
@@ -13,6 +16,9 @@ Gartenstr 43 \
 
 **Kontakt:** \
 E-Mail: <span class="email-filler-show">Enable JS to see email</span>
+
+**Gestaltung und Entwicklung:** \
+Finn Gedrath ([finngedrath.me](https://finngedrath.me))
 
 ## Haftung für Inhalte
 

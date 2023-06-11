@@ -10,6 +10,7 @@ import postcss_mixin from "postcss-mixins";
 import source_maps from "lume/plugins/source_maps.ts";
 import sheets from "lume/plugins/sheets.ts";
 import esbuild from "lume/plugins/esbuild.ts";
+import metas from "lume/plugins/metas.ts";
 
 const site = lume({
   src: "./src",
@@ -38,6 +39,7 @@ site.use(esbuild());
 
 site.use(source_maps());
 
+site.use(metas());
 
 site.filter("to_date", (value) => new Date(value).toJSON());
 site.filter("decode_utf8", (value) => decodeURIComponent(escape(value)));
