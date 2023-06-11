@@ -6,6 +6,7 @@ import sass from "lume/plugins/sass.ts";
 import postcss from "lume/plugins/postcss.ts";
 import postcss_minify from "postcss-minify";
 import postcss_extend_rule from "postcss-extend-rule";
+import postcss_mixin from "postcss-mixins";
 import source_maps from "lume/plugins/source_maps.ts";
 import sheets from "lume/plugins/sheets.ts";
 import esbuild from "lume/plugins/esbuild.ts";
@@ -29,6 +30,7 @@ site.use(postcss({
   keepDefaultPlugins: true,
   plugins: [
     postcss_extend_rule(),
+		postcss_mixin(),
     postcss_minify(),
   ],
 }));

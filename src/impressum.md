@@ -11,11 +11,8 @@ Nadine Söhnert \
 Gartenstr 43 \
 51379 Leverkusen
 
-
 **Kontakt:** \
-Telefon: 0177-4548695 \
-E-Mail: n.soehnert@yahoo.de
-
+E-Mail: <span class="email-filler-show">Enable JS to see email</span>
 
 ## Haftung für Inhalte
 

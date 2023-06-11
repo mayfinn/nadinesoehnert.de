@@ -5,14 +5,7 @@
     border: 3px solid var(--color-fg);
     padding: var(--m);
 
-    transition: transform 0.12s ease-in-out, box-shadow 0.12s ease-in-out;
-
-    &:hover,
-    &:focus {
-      box-shadow: 5px 10px 0px var(--color-fg);
-      transform: translateX(-2.5px) translateY(-5px);
-    }
-
+    @mixin hoverBoxShadow;
   }
 
   &:nth-child(1) a {

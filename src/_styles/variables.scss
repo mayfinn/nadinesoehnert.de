@@ -64,3 +64,13 @@
 	--max-width: 920px;
 	--grid-gap: 40px;
 }
+
+@define-mixin hoverBoxShadow $color: var(--color-fg) {
+	transition: transform 0.12s ease-in-out, box-shadow 0.12s ease-in-out;
+	
+	&:hover,
+	&:focus {
+		box-shadow: 5px 10px 0px $color;
+		transform: translateX(-2.5px) translateY(-5px);
+	}
+}

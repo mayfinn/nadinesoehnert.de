@@ -39,9 +39,11 @@
     background-color: var(--color-fg);
     color: var(--color-bg);
     font-weight: var(--fw-bold);
-
+    
     &a {
       text-decoration: none;
+
+      @mixin hoverBoxShadow var(--color-yellow);
     }
   }
 }
