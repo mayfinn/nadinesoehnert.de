@@ -1,4 +1,11 @@
 <svg width="313" height="353" viewBox="0 0 313 353" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <pattern id="img1" patternUnits="userSpaceOnUse" width="313" height="313">
+    <image href="/images/profile.jpg" x="0" y="0" width="313" height="313" />
+  </pattern>
+</defs>
 <path d="M27.2161 86.7424L5.95752 249.433L136.223 349.184L287.741 286.25L309 123.564L178.74 23.8079L27.2161 86.7424Z" fill="#222222" stroke="#222222" stroke-width="6" stroke-miterlimit="10"/>
 <path d="M24.2586 65.9345L3 228.625L133.265 328.377L284.784 265.442L306.042 102.756L175.782 3L24.2586 65.9345Z" fill="#6BC298" stroke="#222222" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M24.2586 65.9345L3 228.625L133.265 328.377L284.784 265.442L306.042 102.756L175.782 3L24.2586 65.9345Z" fill="url(#img1)" stroke="#222222" stroke-width="4" stroke-miterlimit="10"/>
+<!-- #6BC298 -->
 </svg>
