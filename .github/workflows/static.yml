@@ -35,6 +35,7 @@ jobs:
           deno-version: v1.x
       - name: Build with Lume.land
         run: |
+          make download
           deno task build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@64bcae551a7b18bcb9a09042ddf1960979799187 #v1.0.8

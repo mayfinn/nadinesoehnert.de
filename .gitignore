@@ -108,4 +108,4 @@ $RECYCLE.BIN/
 
 _site/
 _cache/
-src/data/dates.xlsx
+src/_data/dates.csv
