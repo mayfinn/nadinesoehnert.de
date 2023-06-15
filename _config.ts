@@ -11,12 +11,16 @@ import source_maps from "lume/plugins/source_maps.ts";
 import sheets from "lume/plugins/sheets.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import metas from "lume/plugins/metas.ts";
+import inline from "lume/plugins/inline.ts";
 
 const site = lume({
   src: "./src",
 });
 
 site.copy("static", ".");
+
+
+site.use(inline());
 
 site.use(date({
 	locales: { de },
