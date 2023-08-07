@@ -22,6 +22,9 @@ Die 36-jährige Leverkusenerin Nadine Söhnert, ist seit vielen Jahren im Touris
 <a href="https://www.youtube.com/@nadinesoehnert" target="_blank" rel="noopener noreferrer" data-umami-event="Contact CTA" data-umami-event-type="youtube">YouTube</a>
 </li>
 <li>
+<a href="https://www.facebook.com/nadinesoehnert" target="_blank" rel="noopener noreferrer" data-umami-event="Contact CTA" data-umami-event-type="facebook">Facebook</a>
+</li>
+<li>
 <span class="email-filler" data-umami-event="Contact CTA" data-umami-event-type="email">Enable JS to see email</span>
 </li>
 </ul>
