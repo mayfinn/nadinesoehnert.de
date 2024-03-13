@@ -43,7 +43,7 @@ jobs:
           make download
           deno task build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@64bcae551a7b18bcb9a09042ddf1960979799187 #v1.0.8
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa #v3.0.1
         with:
           path: ./_site
 
