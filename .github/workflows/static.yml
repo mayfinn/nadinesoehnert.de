@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab #v3.5.2
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@f156874f8191504dae5b037505266ed5dda6c382 #v3.0.6
+        uses: actions/configure-pages@1f0c5cde4bc74cd7e1254d0cb4de8d49e9068c7d #v4.0.0
       - name: Setup Deno
         uses: denoland/setup-deno@9db7f66e8e16b5699a514448ce994936c63f0d54 #v1.1.1
         with:
