@@ -1,4 +1,4 @@
-imagick:
+transformImages:
   - resize: [500, 500]
     suffix: -500x
     format: [webp, png]

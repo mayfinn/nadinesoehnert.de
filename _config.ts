@@ -1,7 +1,8 @@
 import lume from "lume/mod.ts";
+import nunjucks from "lume/plugins/nunjucks.ts";
 import date from "lume/plugins/date.ts";
 import de from "npm:date-fns/locale/de/index.js";
-import imagick from "lume/plugins/imagick.ts";
+import transform_images from "lume/plugins/transform_images.ts";
 import sass from "lume/plugins/sass.ts";
 import postcss from "lume/plugins/postcss.ts";
 import postcss_minify from "postcss-minify";
@@ -19,6 +20,7 @@ const site = lume({
 
 site.copy("static", ".");
 
+site.use(nunjucks());
 
 site.use(inline());
 
@@ -26,7 +28,7 @@ site.use(date({
 	locales: { de },
 }));
 
-site.use(imagick());
+site.use(transform_images());
 
 site.use(sheets());
 
@@ -54,7 +56,7 @@ site.filter("filter_old_dates", (array) => {
 	const new_array = array.filter((event) => {
 		const date = new Date(event["Datum"]);
 
-		return date => now;
+		return date >= now;
 	});
 
 	return new_array;
