@@ -18,7 +18,7 @@ Gartenstr 43 \
 E-Mail: <span class="email-filler-show">Enable JS to see email</span>
 
 **Gestaltung und Entwicklung:** \
-Finn Gedrath ([finngedrath.me](https://finngedrath.me))
+Finn Maybauer ([finnmaybauer.me](https://finnmaybauer.me))
 
 ## Haftung für Inhalte
 
