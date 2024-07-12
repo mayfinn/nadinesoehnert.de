@@ -30,7 +30,11 @@ site.use(date({
 
 site.use(transform_images());
 
-site.use(sheets());
+site.use(sheets({
+	options: {
+		raw: true,
+	},
+}));
 
 site.use(sass());
 site.use(postcss({

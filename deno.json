@@ -5,7 +5,7 @@
     "serve": "deno task lume -s"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.1.1/",
+    "lume/": "https://deno.land/x/lume@v2.2.3/",
     "postcss-minify": "npm:postcss-minify@1.1.0",
     "postcss-extend-rule": "npm:postcss-extend-rule@4.0.0",
     "postcss-mixins": "npm:postcss-mixins@10.0.0",

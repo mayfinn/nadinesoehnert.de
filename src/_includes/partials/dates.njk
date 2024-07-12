@@ -1,8 +1,12 @@
 <h2>Kommende Termine</h2>
 <ul class="date-list">
 
+{% set numOfevents = 0 %}
+
 {% for event in dates|sort(false, true, 'Datum') %}
 {% if event['Datum'] | to_date | date('t') >= ('now' | date('t') - 86400) %}
+
+  {% set numOfevents = numOfevents + 1 %}
 
   <li class="date-list__item">
     <div class="date">
@@ -36,3 +40,7 @@
 {% endfor %}
 
 </ul>
+
+{% if numOfevents == 0 %}
+<p class="fs-s ta-center text-balance text-color-fg-light">Aktuell stehen keine Termine an. Schau gerne später nochmal vorbei.</p>
+{% endif %}
