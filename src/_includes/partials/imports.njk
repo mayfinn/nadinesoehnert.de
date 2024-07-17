@@ -1,0 +1,14 @@
+{% macro video(videoId) %}
+<div class="wrapper-video" data-js-yt-video-id="{{ videoId }}">
+  <div class="wrapper-video__poster" data-js-video-poster>
+    <div class="wrapper-video__poster-text">
+      <button class="wrapper-video__play-button | m-t-3 m-t-7-sm" data-js-video-init="">
+        <img src="images/play.svg" inline>
+      </button>
+      <h3 class="heading-font-1 | f-w-b p-t-3 p-t-9-sm">Beamer</h3>
+      <p class="heading-font-2 | p-t-4">Weil Licht die Dunkelheit braucht</p>
+    </div>
+    <img src="/images/beamer-7940/eur_aktion_aktion_8_7940-75255--104-mediacockpit-3599364-75255.jpg#2024-07-01_12-18-24" alt="" class="wrapper-video__poster-image" loading="lazy">
+  </div>
+</div>
+{% endmacro %}
