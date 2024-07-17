@@ -8,8 +8,7 @@ body {
 }
 
 main, nav {
-  max-width: var(--max-width);
-  margin: var(--xxl) auto;
+  margin-block: var(--xxl);
   padding: var(--m);
 }
 
@@ -17,8 +16,6 @@ footer {
   margin-top: var(--xxl);
 
   .content {
-    margin: 0 auto;
-    max-width: var(--max-width);
     padding: var(--m);
   }
 

@@ -98,3 +98,8 @@
 .text-color-fg-light {
   color: var(--color-fg-light);
 }
+
+.wrapper {
+  margin-inline: auto;
+  max-width: var(--max-width);
+}

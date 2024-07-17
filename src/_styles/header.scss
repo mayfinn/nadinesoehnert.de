@@ -55,10 +55,9 @@ header {
 
 
 .title {
-  margin: -120px auto 0;
+  margin-block-start: -120px;
   gap: var(--grid-gap);
   padding: var(--m);
-  max-width: var(--max-width);
   display:flex;
   flex-direction:row;
   justify-content: space-between;
