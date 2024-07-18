@@ -1,8 +1,10 @@
 @import url('./_styles/font.scss');
 @import url('./_styles/variables.scss');
-@import url('./_styles/tokens.scss');
+@import url('./_styles/tokens.css');
 @import url('./_styles/reset.scss');
 @import url('./_styles/base.scss');
-@import url('./_styles/header.scss');
-@import url('./_styles/dates.scss');
-@import url('./_styles/contacts.scss');
+
+@import url('./_styles/components/header.scss');
+@import url('./_styles/components/dates.scss');
+@import url('./_styles/components/contacts.scss');
+@import url('./_styles/components/videoWrapper.scss');

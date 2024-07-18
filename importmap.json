@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "/": "./",
+    "./": "./",
+    "lume/": "https://deno.land/x/lume@v2.2.3/",
+    "postcss-minify": "npm:postcss-minify@1.1.0",
+    "postcss-extend-rule": "npm:postcss-extend-rule@4.0.0",
+    "postcss-mixins": "npm:postcss-mixins@10.0.0",
+    "postcss-nesting": "npm:postcss-nesting@12.1.5",
+    "postcss-each": "npm:postcss-each@1.1.0",
+    "markdown-it-shortcode-tag": "npm:markdown-it-shortcode-tag@1.1.0",
+    "date-fns/locale": "npm:date-fns@3.6.0/locale"
+  }
+}
