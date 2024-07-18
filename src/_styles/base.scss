@@ -8,17 +8,14 @@ body {
 }
 
 main, nav {
-  max-width: var(--max-width);
-  margin: var(--xxl) auto;
+  margin-block: var(--xxl);
   padding: var(--m);
 }
 
 footer {
-  margin-top: var(--xxl);
+  margin-block-start: var(--xxl);
 
   .content {
-    margin: 0 auto;
-    max-width: var(--max-width);
     padding: var(--m);
   }
 
@@ -48,14 +45,14 @@ font-size: var(--fs-s);
 }
 
 section:not(:last-child) {
-  margin-bottom: calc(var(--xxl) * 3);
+  margin-block-end: calc(var(--xxl) * 3);
 }
 
 p {
 font-size: var(--fs-l);
 
   & + p {
-    margin-top: var(--l);
+    margin-block-start: var(--l);
   }
 }
 
@@ -78,20 +75,20 @@ h1, h2, h3, h4 {
   font-weight: var(--fw-bold);
 
   &:not(:first-child) {
-    margin-top: calc(var(--xxl) * 3);
+    margin-block-start: calc(var(--xxl) * 3);
   }
 }
 .small :where(h1, h2, h3, h4):not(:first-child) {
-  margin-top: var(--l);
+  margin-block-start: var(--l);
 }
 
 h1 {
   font-size: var(--fs-l);
-  margin-bottom: var(--l);
+  margin-block-end: var(--l);
 }
 
 h2 {
-  margin-bottom: var(--l);
+  margin-block-end: var(--l);
   font-size: var(--fs-m);
 }
 h3 {

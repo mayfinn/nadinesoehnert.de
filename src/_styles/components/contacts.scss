@@ -1,7 +1,7 @@
 .contacts li {
   & a {
     display: block;
-    margin-bottom: var(--m);
+    margin-block-end: var(--m);
     border: 3px solid var(--color-fg);
     padding: var(--m);
 

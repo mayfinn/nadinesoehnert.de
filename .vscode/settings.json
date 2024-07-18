@@ -1,3 +1,20 @@
 {
-  "deno.enable": false
+  "deno.enable": true,
+  "deno.suggest.imports.hosts": {
+    "https://deno.land": true,
+    "https://cdn.nest.land": true,
+    "https://crux.land": true
+  },
+  "deno.importMap": "importmap.json",
+  "editor.formatOnSave": true,
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "[ejs]": {
+    "editor.formatOnSave": false
+  },
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
 }

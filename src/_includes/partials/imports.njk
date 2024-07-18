@@ -1,0 +1,20 @@
+{% macro video(videoId, thumbnail, videoTitle) %}
+<div class="wrapper-video" data-js-yt-video-id="{{ videoId }}">
+  <div class="wrapper-video__poster">
+    <div class="wrapper-video__poster-text">
+      <button class="wrapper-video__play-button" data-js-yt-init title="Video abspielen">
+        <img src="images/play.svg" inline>
+      </button>
+      <h2 class="fs-xl">{{ videoTitle }}</h2>
+      <p class="fs-s m-bs-xxl text-balance">Mit dem Absspielen des Videos akzeptierst du die Datenschutzerklärung von YouTube.
+        <a href="/datenschutz" title="Datenschutzerklärung">Mehr erfahren.</a>
+      </p>
+    </div>
+    <picture>
+      <source srcset="{% srcset thumbnail + '.webp' %}" type="image/webp">
+      <source srcset="{% srcset thumbnail + '.jpg' %}" type="image/jpeg">
+      <img src="/images/{{ thumbnail }}-500x.jpg" alt="" class="wrapper-video__poster-image" loading="lazy">
+    </picture>
+  </div>
+</div>
+{% endmacro %}

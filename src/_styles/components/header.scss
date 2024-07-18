@@ -5,7 +5,7 @@ header {
   height: 500px;
 
   @media screen and (max-width: 800px) {
-    margin-top: -100px;
+    margin-block-start: -100px;
   }
 
   .background__elements {
@@ -55,17 +55,16 @@ header {
 
 
 .title {
-  margin: -120px auto 0;
+  margin-block-start: -120px;
   gap: var(--grid-gap);
   padding: var(--m);
-  max-width: var(--max-width);
   display:flex;
   flex-direction:row;
   justify-content: space-between;
   align-items: flex-end;
 
   @media screen and (max-width: 800px) {
-    margin-top: 0;
+    margin-block-start: 0;
     flex-direction: column-reverse;
     align-items: center;
 

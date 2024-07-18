@@ -4,11 +4,11 @@
   {% include 'partials/head.njk' %}
   <body>
 
-    <nav>
+    <nav class="wrapper">
       <a href="/">Startseite</a>
     </nav>
 
-    <main class="small">
+    <main class="small | wrapper m-bs-xxl">
       {{ content | safe }}
     </main>
 
