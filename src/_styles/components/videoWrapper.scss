@@ -13,9 +13,14 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 100%);
   
     color: var(--color-bg);
+    text-align: center;
 
     :is(h1, h2, h3, h4) {
       margin-block-start: 0;
+    }
+
+    & > * {
+      max-width: 50ch;
     }
  
   }
@@ -26,6 +31,11 @@
     height: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
+
+    @media screen and (max-width: 40rem) {
+      aspect-ratio: 4 / 3;
+      
+    }
   }
 
 .wrapper-video__play-button {
@@ -34,6 +44,13 @@
     border: none;
     cursor: pointer;
     padding: var(--l);
+
+    &:hover,
+    &:focus {
+      svg {
+        fill: var(--color-pink);
+      }
+    }
 
     svg {
       width: calc(var(--xxl) * 2);
@@ -47,4 +64,9 @@
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
+
+    @media screen and (max-width: 40rem) {
+      aspect-ratio: 4 / 3;
+      
+    }
   }
