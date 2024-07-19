@@ -76,3 +76,17 @@
 		transform: translateX(-2.5px) translateY(-5px);
 	}
 }
+
+@define-mixin breakpoinSmall {
+
+      @media (min-width: 640px) {
+          @mixin-content;
+      }
+}
+
+@define-mixin breakpoinMedium {
+
+      @media (min-width: 768px) {
+          @mixin-content;
+      }
+}

@@ -46,7 +46,7 @@ site.use(postcss({
     postcss_extend_rule(),
     postcss_mixin(),
     postcss_nesting(),
-    postcss_minify(),
+    // postcss_minify(),
   ],
 }));
 site.use(esbuild());
@@ -73,17 +73,17 @@ site.filter("filter_old_dates", (array) => {
 });
 
 // HELPERS
-
-site.helper("srcset", (path: string) => {
+const helperSrcset = (path: string) => {
   const pathParts = path.split(".");
   const extension = pathParts.pop();
   const filename = pathParts.join(".");
 
-  return `/images/${filename}-500w.${extension} 500w,
+  return `/images/${filename}-500x.${extension} 500w,
 		/images/${filename}-1000x.${extension} 1000w,
 		/images/${filename}-2000x.${extension} 2000w,
 		/images/${filename}-2500x.${extension} 2500w,
 		/images/${filename}-4000x.${extension} 4000w`;
-}, { type: "tag", async: false });
+};
+site.helper("srcset", helperSrcset, { type: "tag", async: false });
 
 export default site;

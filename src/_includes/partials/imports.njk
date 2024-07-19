@@ -2,11 +2,13 @@
 <div class="wrapper-video" data-js-yt-video-id="{{ videoId }}">
   <div class="wrapper-video__poster">
     <div class="wrapper-video__poster-text">
-      <button class="wrapper-video__play-button" data-js-yt-init title="Video abspielen">
+      <button class="wrapper-video__play-button m-bs-xxl" data-js-yt-init title="Video abspielen" data-umami-event="Play Video">
         <img src="images/play.svg" inline>
       </button>
+      {% if videoTitle %}
       <h2 class="fs-xl">{{ videoTitle }}</h2>
-      <p class="fs-s m-bs-xxl text-balance">Mit dem Absspielen des Videos akzeptierst du die Datenschutzerklärung von YouTube.
+      {% endif %}
+      <p class="fs-s m-bs-xl text-balance">Mit dem Absspielen des Videos akzeptierst du die Datenschutzerklärung von YouTube.
         <a href="/datenschutz" title="Datenschutzerklärung">Mehr erfahren.</a>
       </p>
     </div>
@@ -17,4 +19,12 @@
     </picture>
   </div>
 </div>
+{% endmacro %}
+
+{% macro picture(image, alt, classes) %}
+<picture>
+  <source srcset="{% srcset image + '.webp' %}" type="image/webp">
+  <source srcset="{% srcset image + '.jpg' %}" type="image/jpeg">
+  <img src="/images/{{ image }}-500x.jpg" alt="{{ alt }}" class="{{ classes }}" loading="lazy">
+</picture>
 {% endmacro %}

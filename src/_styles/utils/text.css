@@ -1,0 +1,36 @@
+
+@each $ff in (sans, mono) {
+  .ff-$(ff) {
+    font-family: var(--ff-$(ff));
+  }
+}
+
+@each $fw in (light, regular, bold, black) {
+  .fw-$(fw) {
+    font-weight: var(--fw-$(fw));
+  }
+}
+
+.ta-left {
+  text-align: left;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.ta-right {
+  text-align: right;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-color-fg {
+  color: var(--color-fg);
+}
+
+.text-color-fg-light {
+  color: var(--color-fg-light);
+}

@@ -1,5 +1,5 @@
 @import url('./_styles/font.scss');
-@import url('./_styles/variables.scss');
+@import url('./_styles/variables.css');
 @import url('./_styles/tokens.css');
 @import url('./_styles/reset.scss');
 @import url('./_styles/base.scss');
