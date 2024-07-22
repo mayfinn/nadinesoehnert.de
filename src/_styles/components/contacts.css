@@ -1,4 +1,5 @@
 .contacts li {
+
   & a {
     display: block;
     padding: var(--m);

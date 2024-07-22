@@ -22,6 +22,7 @@
   }
 
   .name {
+
     & h3 {
       font-size: var(--fs-s);
       line-height: var(--lh-s);
