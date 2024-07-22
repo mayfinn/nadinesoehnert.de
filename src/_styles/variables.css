@@ -26,7 +26,6 @@
 	--color-pink: #EE72A8;
 	--color-green: #6BC298;
 	--color-lila: #8F87E9;
-
 	--color-bg: #fff;
 	--color-fg: #222;
 	--color-fg-light: #666;
@@ -35,15 +34,12 @@
 		========================================================================== */
   --ff-sans: 'Outfit', sans-serif;
 	--ff-mono: "Press Start 2P", courier, monospace;
-
 	--fw-light: 300; /* Light */
 	--fw-regular: 400; /* Regular */
 	--fw-bold: 700; /* Bold */
 	--fw-black: 900; /* Black */
-
 	--lsp-regular: normal;
 	--lsp-wide: 0.02rem; /* 0.32px */
-
 	--fs-xxs: calc(var(--base) * 0.75); /* 12px */
 	--fs-xs: calc(var(--base) * 1); /* 16px */
 	--fs-s: calc(var(--base) * 1.25); /* 20px */
@@ -51,7 +47,6 @@
 	--fs-l: calc(var(--base) * 2); /* 32px */
 	--fs-xl: calc(var(--base) * 2.625); /* 42px */
 	--fs-xxl: calc(var(--base) * 3.375); /* 54px */
-
 	--lh-xxs: calc(var(--base) * 1); /* 16px */
 	--lh-xs: calc(var(--base) * 1.375); /* 22px */
 	--lh-s: calc(var(--base) * 1.5); /* 24px */
@@ -72,7 +67,19 @@
 	
 	&:hover,
 	&:focus {
-		box-shadow: 5px 10px 0px $color;
+		box-shadow: 5px 10px 0 $color;
 		transform: translateX(-2.5px) translateY(-5px);
 	}
+}
+
+@define-mixin breakpoinSmall {
+      @media (width >= 640px) {
+          @mixin-content;
+      }
+}
+
+@define-mixin breakpoinMedium {
+      @media (width >= 768px) {
+          @mixin-content;
+      }
 }

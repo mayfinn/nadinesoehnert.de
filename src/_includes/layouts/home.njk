@@ -11,7 +11,42 @@
       </section>
 
       <section>
-       {{ content | safe }}
+        {{ content | safe }}
+
+        <h2> Eindrücke </h2>
+        <div class="grid grid--cols-2">
+          {% from "partials/imports.njk" import picture %}
+          {% for image in impressions %}
+          <figure class="{{ image.wrapperClass }}">
+            {{ picture(image.file, image.alt, image.class) }}
+          </figure>
+          {% endfor %}
+        </div>
+
+        <p>
+          <a href="{{ presskit }}" target="_blank" rel="noopener noreferrer" class="fs-m" data-umami-event="Download CTA" data-umami-event-type="presskit">
+            Weiteres Presse Material von Nadine
+          </a>
+        </p>
+
+
+        <h2> Kontakt </h2>
+
+        <div class="contacts">
+          <ul>
+            {% for contact in contacts %}
+            <li>
+              <a href="{{ contact.link }}" target="_blank" rel="noopener noreferrer" data-umami-event="Contact CTA" data-umami-event-type="{{ contact.name }}">
+                {{ contact.name }}
+              </a>
+            </li>
+            {% endfor %}
+            <li>
+              <span class="email-filler" data-umami-event="Contact CTA" data-umami-event-type="email">Enable JS to see email</span>
+            </li>
+          </ul>
+        </div>
+
       </section>
     </main>
 

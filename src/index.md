@@ -1,32 +1,25 @@
 ---
 title: Nadine Söhnert
 layout: layouts/home.njk
+impressions:
+  - file: nadine-press-01
+    wrapperClass: col-span-2 col-span-1-sm row-span-2
+  - file: nadine-press-02
+    wrapperClass: col-span-2 col-span-1-sm row-span-1
+  - file: nadine-press-03
+    wrapperClass: col-span-2 col-span-1-sm row-span-1
+presskit: https://drive.google.com/drive/folders/15YBUag6LxZj1mf1hCdj-gFQxWiMxphT_
+contacts:
+  - name: Instagram
+    link: https://instagram.com/nadinesoehnert
+  - name: TikTok
+    link: https://tiktok.com/@nadinesoehnert
+  - name: YouTube
+    link: https://www.youtube.com/@nadinesoehnert
+  - name: Facebook
+    link: https://www.facebook.com/nadinesoehnert
 ---
 
 ## Über mich
 
-Die 36-jährige Leverkusenerin Nadine Söhnert, ist seit vielen Jahren im Tourismus- und Versicherungsgewerbe tätig. Zudem verfolgt sie seit vielen Jahren aktiv ihre künstlerische Laufbahn. Sowohl als Regisseurin und Darstellerin des [Jungen Musicals Leverkusen](https://www.jungesmusical.de) als auch als Tänzerin in Karnevalsvereinen und Tanzschulen fühlt sich Nadine seit über 25 Jahren auf der Bühne wie zu Hause. Diese Erfahrungen bewegten sie 2022 dazu, den Schritt auf die Stand Up Comedy Bühne zu wagen und den Zuschauern dort ihre Leidenschaft für trockenen und zielsicheren Humor zu präsentieren.
-
-## Kontakt
-
-<div class="contacts">
-
-<ul>
-<li>
-<a href="https://instagram.com/nadinesoehnert" target="_blank" rel="noopener noreferrer" data-umami-event="Contact CTA" data-umami-event-type="instagram">Instagram</a>
-</li>
-<li>
-<a href="https://tiktok.com/@nadinesoehnert" target="_blank" rel="noopener noreferrer" data-umami-event="Contact CTA" data-umami-event-type="tiktok">TikTok</a>
-</li>
-<li>
-<a href="https://www.youtube.com/@nadinesoehnert" target="_blank" rel="noopener noreferrer" data-umami-event="Contact CTA" data-umami-event-type="youtube">YouTube</a>
-</li>
-<li>
-<a href="https://www.facebook.com/nadinesoehnert" target="_blank" rel="noopener noreferrer" data-umami-event="Contact CTA" data-umami-event-type="facebook">Facebook</a>
-</li>
-<li>
-<span class="email-filler" data-umami-event="Contact CTA" data-umami-event-type="email">Enable JS to see email</span>
-</li>
-</ul>
-
-</div>
+Als Comedy Newcomerin aus Leverkusen bringt Nadine Söhnert ihren trockenen Humor mit viel Energie auf die Bühnen der Region. Mit Auftritten u.a. im BOING! Comedy Club oder Comedyflash begeistert sie das Publikum und setzt als Frau in der Comedy-Szene Kölns frische Akzente.

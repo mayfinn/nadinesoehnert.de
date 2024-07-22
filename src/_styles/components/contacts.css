@@ -1,9 +1,10 @@
 .contacts li {
+
   & a {
     display: block;
-    margin-block-end: var(--m);
-    border: 3px solid var(--color-fg);
     padding: var(--m);
+    border: 3px solid var(--color-fg);
+    margin-block-end: var(--m);
 
     @mixin hoverBoxShadow{};
   }
@@ -11,15 +12,19 @@
   &:nth-child(1) a {
     background-color: var(--color-green);
   }
+
   &:nth-child(2) a {
     background-color: var(--color-yellow);
   }
+
   &:nth-child(3) a {
     background-color: var(--color-pink);
   }
+
   &:nth-child(4) a {
     background-color: var(--color-blue);
   }
+
   &:nth-child(5) a {
     background-color: var(--color-lila);
   }

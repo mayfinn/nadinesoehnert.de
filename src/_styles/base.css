@@ -1,15 +1,19 @@
+:root {
+  box-sizing: border-box;
+}
+
 body {
+  display: grid;
+  min-height: 100vh;
   background-color: var(--color-bg);
   color: var(--color-fg);
-  display: grid;
-  grid-template-rows: minmax(200px, auto) 1fr minmax(200px, auto);
   gap: 30px;
-  min-height: 100vh;
+  grid-template-rows: minmax(200px, auto) 1fr minmax(200px, auto);
 }
 
 main, nav {
-  margin-block: var(--xxl);
   padding: var(--m);
+  margin-block: var(--xxl);
 }
 
 footer {
@@ -25,23 +29,22 @@ footer {
   }
 
   .pattern {
-    background-image: url(/images/pattern.svg);
+    height: 200px;
+    background-image: url("/images/pattern.svg");
+    background-position: top;
     background-repeat: repeat;
     background-size: 150px;
-    background-position: top;
-    height: 200px;
   }
 }
 
 
 body
  {font-family: var(--ff-sans);
-
+  font-feature-settings: 'sinf' on;
 font-size: var(--fs-s);
-  line-height: 1.5;
   font-style: normal;
   font-weight: 400;
-  font-feature-settings: 'sinf' on;
+  line-height: 1.5;
 }
 
 section:not(:last-child) {
@@ -78,6 +81,7 @@ h1, h2, h3, h4 {
     margin-block-start: calc(var(--xxl) * 3);
   }
 }
+
 .small :where(h1, h2, h3, h4):not(:first-child) {
   margin-block-start: var(--l);
 }
@@ -88,12 +92,14 @@ h1 {
 }
 
 h2 {
-  margin-block-end: var(--l);
   font-size: var(--fs-m);
+  margin-block-end: var(--l);
 }
+
 h3 {
   font-size: var(--fs-s);
 }
+
 h4 {
   font-size: var(--fs-xs);
 }

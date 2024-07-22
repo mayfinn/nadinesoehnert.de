@@ -2,6 +2,7 @@
   "imports": {
     "/": "./",
     "./": "./",
+    "@std/path": "jsr:@std/path@^1.0.1",
     "lume/": "https://deno.land/x/lume@v2.2.3/",
     "postcss-minify": "npm:postcss-minify@1.1.0",
     "postcss-extend-rule": "npm:postcss-extend-rule@4.0.0",
@@ -9,6 +10,11 @@
     "postcss-nesting": "npm:postcss-nesting@12.1.5",
     "postcss-each": "npm:postcss-each@1.1.0",
     "markdown-it-shortcode-tag": "npm:markdown-it-shortcode-tag@1.1.0",
-    "date-fns/locale": "npm:date-fns@3.6.0/locale"
+    "date-fns/locale": "npm:date-fns@3.6.0/locale",
+    "stylelint": "npm:stylelint@16.7.0",
+    "stylelint-config-standard": "npm:stylelint-config-standard@36.0.1",
+    "stylelint-order": "npm:stylelint-order@6.0.4",
+    "stylelint-config-idiomatic-order": "npm:stylelint-config-idiomatic-order@10.0.0",
+    "@std/cli": "jsr:@std/cli@^1.0.0"
   }
 }
