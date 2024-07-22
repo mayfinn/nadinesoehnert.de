@@ -1,10 +1,9 @@
 header {
-
 .background {
   position: relative;
   height: 500px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (width <= 800px) {
     margin-block-start: -250px;
   }
 
@@ -13,40 +12,34 @@ header {
     top: 0;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
-
     width: 100%;
-    height: 100%;
-
     max-width: 2500px;
-
+    height: 100%;
     object-fit: cover;
     object-position: center bottom;
+    transform: translateX(-50%);
   }
 
   .background__grid {
-    background-image: url(/images/grid.svg);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 400px;
+    background-image: url("/images/grid.svg");
+    background-position: center;
     background-repeat: repeat;
     background-size: 80px;
-    background-position: center;
-
-    height: 400px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
 
     &::before {
-      content: '';
       position: absolute;
+      right: 0;
       bottom: 0;
       left: 0;
-      right: 0;
       height: 100px;
-
       background-image: linear-gradient(transparent, var(--color-bg));
+      content: '';
     }
   }
 
@@ -55,19 +48,19 @@ header {
 
 
 .title {
-  margin-block-start: -120px;
-  gap: var(--grid-gap);
-  padding: var(--m);
   display:flex;
   flex-direction:row;
-  justify-content: space-between;
   align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--m);
+  gap: var(--grid-gap);
+  margin-block-start: -120px;
   text-align: center;
 
-  @media screen and (max-width: 800px) {
-    margin-block-start: 0;
+  @media screen and (width <= 800px) {
     flex-direction: column-reverse;
     align-items: center;
+    margin-block-start: 0;
 
     & h1 {
       align-items: flex-start;
@@ -76,8 +69,8 @@ header {
     
 
   & h1 {
-text-transform: uppercase;
 font-size: var(--fs-xxl);
+text-transform: uppercase;
   word-spacing: -0.75em;
   }
 

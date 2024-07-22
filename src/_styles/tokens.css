@@ -1,8 +1,8 @@
-@import './utils/sizes.css';
-@import './utils/text.css';
-@import './utils/grid.css';
+@import url('./utils/sizes.css');
+@import url('./utils/text.css');
+@import url('./utils/grid.css');
 
 .wrapper {
-  margin-inline: auto;
   max-width: var(--max-width);
+  margin-inline: auto;
 }

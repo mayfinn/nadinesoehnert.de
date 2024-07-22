@@ -1,93 +1,92 @@
 
 
 @define-mixin column $breakpoint-min {
-    @each $col in (1, 2, 3, 4, 5) {
-      .col-span-$(col)-$(breakpoint-min) {
-        grid-column-end: span $(col);
-      }
-
-      .col-start-$(col)-$(breakpoint-min) {
-        grid-column-start: $(col);
-      }
-
-      .col-end-$(col)-$(breakpoint-min) {
-        grid-column-end: $(col);
-      }
-
-      .row-span-$(col)-$(breakpoint-min) {
-        grid-row-end: span $(col);
-      }
-
-      .row-start-$(col)-$(breakpoint-min) {
-        grid-row-start: $(col);
-      }
-
-      .row-end-$(col)-$(breakpoint-min) {
-        grid-row-end: $(col);
-      }
+  @each $col in (1, 2, 3, 4, 5) {
+    .col-span-$(col)-$(breakpoint-min) {
+      grid-column-end: span $(col);
     }
+
+    .col-start-$(col)-$(breakpoint-min) {
+      grid-column-start: $(col);
+    }
+
+    .col-end-$(col)-$(breakpoint-min) {
+      grid-column-end: $(col);
+    }
+
+    .row-span-$(col)-$(breakpoint-min) {
+      grid-row-end: span $(col);
+    }
+
+    .row-start-$(col)-$(breakpoint-min) {
+      grid-row-start: $(col);
+    }
+
+    .row-end-$(col)-$(breakpoint-min) {
+      grid-row-end: $(col);
+    }
+  }
 }
 
 @each $col in (1, 2, 3, 4, 5) {
-    .col-span-$(col) {
-        grid-column-end: span $(col);
-    }
+  .col-span-$(col) {
+    grid-column-end: span $(col);
+  }
 
-    .col-start-$(col) {
-        grid-column-start: $(col);
-    }
+  .col-start-$(col) {
+    grid-column-start: $(col);
+  }
 
-    .col-end-$(col) {
-        grid-column-end: $(col);
-    }
+  .col-end-$(col) {
+    grid-column-end: $(col);
+  }
 
-    .row-span-$(col) {
-        grid-row-end: span $(col);
-    }
+  .row-span-$(col) {
+    grid-row-end: span $(col);
+  }
 
-    .row-start-$(col) {
-        grid-row-start: $(col);
-    }
+  .row-start-$(col) {
+    grid-row-start: $(col);
+  }
 
-    .row-end-$(col) {
-        grid-row-end: $(col);
-    }
-
+  .row-end-$(col) {
+    grid-row-end: $(col);
+  }
 
 }
 
 .col-end-last {
-    grid-column-end: -1;
+  grid-column-end: -1;
 }
 
 .grid {
-    display: grid;
-    gap: var(--xl);
+  display: grid;
+  gap: var(--xl);
 
-    img {
-      width: 100%;
-      height: 100%;
-      aspect-ratio: 3 / 2;
-        object-fit: cover;
-        object-position: center;
-        display: inline-block;
-    }
+  img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 .grid--cols-2 {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  grid-template-columns: repeat(2, 1fr); 
+}
 
 .grid--cols-4 {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  grid-template-columns: repeat(4, 1fr);
+}
 
 
-    @mixin breakpoinSmall {
-        @mixin column sm;
-    }
+@mixin breakpoinSmall {
+  @mixin column sm;
+}
 
-    @mixin breakpoinMedium {
-        @mixin column md;
-    }
+@mixin breakpoinMedium {
+  @mixin column md;
+}
 

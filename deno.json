@@ -2,7 +2,8 @@
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
-    "serve": "deno task lume -s"
+    "serve": "deno task lume -s",
+    "lint:css": "deno run --allow-env --allow-read --allow-write --allow-sys --unstable-fs stylelint.ts"
   },
   "importMap": "importmap.json",
   "compilerOptions": {
