@@ -46,7 +46,7 @@ site.use(postcss({
     postcss_extend_rule(),
     postcss_mixin(),
     postcss_nesting(),
-    // postcss_minify(),
+    postcss_minify(),
   ],
 }));
 site.use(esbuild());
