@@ -35,7 +35,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b #v5.0.0
       - name: Setup Deno
-        uses: denoland/setup-deno@5fae568d37c3b73449009674875529a984555dd1 #v1.3.0
+        uses: denoland/setup-deno@4606d5cc6fb3f673efd4f594850e3f4b3e9d29cd #v2.0.0
         with:
           deno-version: v1.x
       - name: Build with Lume.land
